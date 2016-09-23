@@ -7,406 +7,19 @@
           content="Fan Jiang's Homepage."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/landing.css"/>
+    <link rel="stylesheet" href="js/jvectormap/jquery-jvectormap-1.2.2.css">
     <!-- Powered by Landing Zero by Bootstrap Zero -->
 </head>
 <body lang="en-us">
-<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Fan Jiang</a>
-        </div>
-        <div class="navbar-collapse collapse" id="bs-navbar">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a class="page-scroll" href="#one">INTRO</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#two">GLANCE</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#three">PORTFOLIO</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#four">RESUME</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#last">CONTACT</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" data-toggle="modal" title="About"
-                       href="#aboutModal">About</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<header id="first">
-    <div class="header-content">
-        <div class="inner">
-            <h1 class="cursive">Multi-discipline Architect</h1>
-            <h4 class="cursive">with superior skills</h4>
-            <hr>
-            <!--a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl"></a> &nbsp;-->
-            <a href="#one" class="btn btn-primary btn-xl page-scroll">Explore</a>
-        </div>
-    </div>
-    <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s"
-           poster="video/Up.jpg" id="video-background">
-        <source src="video/Up.mp4" type="video/mp4">
-        <source src="video/Up.webm" type="video/webm">
-        Your browser does not support the video tag. I suggest you upgrade your browser.
-    </video>
-</header>
-<section class="bg-primary news-pick" id="one">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
-                <h2 class="margin-top-0 text-primary">Full-stack Architect</h2>
-                <br>
-                <div class="text-faded text-left">
+<section id="map">
+    <div id="world-map" style="height: 200px; width: 100%;"></div>
+</section>
+<section id="dashboard">
+    <div id="db-con" class="container-fluid">
 
-                    <p>I am currently a student of the South University of Science and Technology of China. <br>
-                        Interests include: </p>
+    </div>
+</section>
 
-                    <ul>
-                        <li>Computer Related
-                            <ul>
-                                <li>Algorithms</li>
-                                <li>Web Development</li>
-                                <li>System Security</li>
-                            </ul>
-                        </li>
-                        <li>EE
-                            <ul>
-                                <li>Embedded Systems</li>
-                                <li>Wireless Communication</li>
-                            </ul>
-                        </li>
-                        <li>Other
-                            <ul>
-                                <li>Synthetic Biology</li>
-                                <li>Experimental History</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <p>I am a supporter of the Maker movement.</p>
-                </div>
-                <a href="#three" class="btn btn-default btn-xl page-scroll">Projects</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="two">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="margin-top-0 text-primary">In a Glance</h2>
-                <hr class="primary">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="feature">
-                    <i class="icon-lg ion-university wow fadeIn" data-wow-delay=".3s"></i>
-                    <h3>2 Published Papers</h3>
-                    <p class="text-muted">in Well-recognized Conferences</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="feature">
-                    <i class="icon-lg ion-social-windows wow fadeInUp" data-wow-delay=".2s"></i>
-                    <h3>10 Years</h3>
-                    <p class="text-muted">of Programming Experience</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="feature">
-                    <i class="icon-lg ion-erlenmeyer-flask wow fadeIn" data-wow-delay=".3s"></i>
-                    <h3>2 Awards</h3>
-                    <p class="text-muted">in International Competitions</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="three" class="no-padding">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal"
-                   data-src="images/10.jpg">
-                    <!--<img src="images/10.jpg"-->
-                    <!--class="" alt="Image 1">-->
-                    <div class="gallery-box-image" style="background-image: url('images/10.jpg');"></div>
-                    <div class="gallery-box-caption">
-                        <div class="gallery-box-content">
-                            <div>
-                                <i class="icon-lg ion-ios-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal"
-                   data-src="images/11.jpg">
-                    <div class="gallery-box-image" style="background-image: url('images/11.jpg');"></div>
-                    <div class="gallery-box-caption">
-                        <div class="gallery-box-content">
-                            <div>
-                                <i class="icon-lg ion-ios-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal"
-                   data-src="images/12.jpg">
-                    <div class="gallery-box-image" style="background-image: url('images/12.jpg');"></div>
-                    <div class="gallery-box-caption">
-                        <div class="gallery-box-content">
-                            <div>
-                                <i class="icon-lg ion-ios-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal"
-                   data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg">
-                    <div class="gallery-box-image"
-                         style="background-image: url('//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg');"></div>
-                    <div class="gallery-box-caption">
-                        <div class="gallery-box-content">
-                            <div>
-                                <i class="icon-lg ion-ios-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal"
-                   data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg">
-                    <div class="gallery-box-image"
-                         style="background-image: url('//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg');"></div>
-                    <div class="gallery-box-caption">
-                        <div class="gallery-box-content">
-                            <div>
-                                <i class="icon-lg ion-ios-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal"
-                   data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg">
-                    <div class="gallery-box-image"
-                         style="background-image: url('//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg');"></div>
-                    <div class="gallery-box-caption">
-                        <div class="gallery-box-content">
-                            <div>
-                                <i class="icon-lg ion-ios-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="container-fluid" id="four">
-    <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-            <h2 class="text-center text-primary">Skills</h2>
-            <hr>
-            <div class="media wow fadeInRight">
-                <h3>Web Design</h3>
-                <div class="media-body media-middle">
-                    <p>Experienced full-stack web designer fluent in HTML, CSS, JavaScript, Node.js and PHP.</p>
-                </div>
-                <div class="media-right">
-                    <i class="icon-lg ion-ios-bolt-outline"></i>
-                </div>
-            </div>
-            <hr>
-            <div class="media wow fadeIn">
-                <h3>Computer Science</h3>
-                <div class="media-left">
-                    <a href="#alertModal" data-toggle="modal" data-target="#alertModal"><i
-                            class="icon-lg ion-ios-cloud-download-outline"></i></a>
-                </div>
-                <div class="media-body media-middle">
-                    <p>Deep knowledge of algorithms and computer system design baked in.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="media wow fadeInRight">
-                <h3>Electronics</h3>
-                <div class="media-body media-middle">
-                    <p>Omni-capable embedded systems engineer in both hardware and software.</p>
-                </div>
-                <div class="media-right">
-                    <i class="icon-lg ion-ios-snowy"></i>
-                </div>
-            </div>
-            <hr>
-            <div class="media wow fadeIn">
-                <h3>Heart</h3>
-                <div class="media-left">
-                    <i class="icon-lg ion-ios-heart-outline"></i>
-                </div>
-                <div class="media-body media-middle">
-                    <p>Outgoing and open-minded, backed with inherent courage.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="media wow fadeInRight">
-                <h3>Culture</h3>
-                <div class="media-body media-middle">
-                    <p>Fluent in both English and Japanese, let alone Mandarin.</p>
-                </div>
-                <div class="media-right">
-                    <i class="icon-lg ion-ios-flask-outline"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<aside class="bg-dark">
-    <div class="container text-center">
-        <div class="call-to-action">
-            <h2 class="text-primary">本科生招生</h2>
-            <a href="https://blog.amayume.net" target="ext"
-               class="btn btn-default btn-lg wow flipInX">立即报名</a>
-        </div>
-        <br>
-        <hr/>
-        <br>
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <div class="row">
-                    <h6 class="wide-space text-center">BOOTSTRAP IS BASED ON THESE STANDARDS</h6>
-                    <div class="col-sm-3 col-xs-6 text-center">
-                        <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 text-center">
-                        <i class="icon-lg ion-social-sass" title="sass"></i>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 text-center">
-                        <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 text-center">
-                        <i class="icon-lg ion-social-css3-outline" title="css 3"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</aside>
-<section id="last">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="margin-top-0 wow fadeIn">联系我们</h2>
-                <hr class="primary">
-                <p></p>
-            </div>
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-                <form class="contact-form row">
-                    <div class="col-md-4">
-                        <label></label>
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="col-md-4">
-                        <label></label>
-                        <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="col-md-4">
-                        <label></label>
-                        <input type="text" class="form-control" placeholder="Phone">
-                    </div>
-                    <div class="col-md-12">
-                        <label></label>
-                        <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
-                    </div>
-                    <div class="col-md-4 col-md-offset-4">
-                        <label></label>
-                        <button type="button" data-toggle="modal" data-target="#alertModal"
-                                class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<footer id="footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-6 col-sm-3 column">
-                <h4>导览</h4>
-                <ul class="list-unstyled">
-                    <li><a href="">本科生教学</a></li>
-                    <li><a href="">研究生培养</a></li>
-                    <li><a href="">科研与合作</a></li>
-                    <li><a href="">Developers</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 column">
-                <h4>关于</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#">联系我们</a></li>
-                    <li><a href="#">南方科技大学</a></li>
-                    <li><a href="#">创新基金</a></li>
-                    <li><a href="#">使用须知</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-3 column">
-                <h4>订阅我们</h4>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" title="No spam, we promise!"
-                               placeholder="E-mail">
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">
-                            注册
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-xs-12 col-sm-3 text-right">
-                <h4>关注我们</h4>
-                <ul class="list-inline">
-                    <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;
-                    </li>
-                    <li><a rel="nofollow" href="" title="Facebook"><i
-                            class="icon-lg ion-social-github-outline"></i></a>&nbsp;</li>
-                    <li><a rel="nofollow" href="" title="Dribble"><i
-                            class="icon-lg ion-social-whatsapp-outline"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <br/>
-        <span class="pull-right text-muted small"><a
-                href="http://www.uavlab.com.cn">南方科技大学无人机与传感器网络实验室</a> ©2016 南方科技大学 计算机科学与工程系</span>
-    </div>
-</footer>
 <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -462,22 +75,195 @@
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
 <!--<script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>-->
 <script src="js/all-min.js"></script>
+<script src="js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-42690126-4', 'auto');
-    ga('send', 'pageview');
+    types = {
+        "decompression_state": "Cabin Decompression",
+        "weight_on_wheels": "Weight on Wheels",
+        "all_doors_closed": "All Doors Closed",
+        //"media_date": "Media Date",
+        //"route_id": "Route ID",
+        "current_coordinates": "Position",
+        "takeoff_time_utc": "Takeoff Time",
+        "passenger_anouncement": "PA",
+        "ground_speed_knots": "Ground Speed",
+        "time_to_destination_minutes": "ETA",
+        "wind_speed_knots": "Wind Speed (kts)",
+        "flight_speed_mach": "Mach Number",
+        "true_heading_degree": "Heading",
+        "current_utc_time": "UTC Time",
+        "outside_air_temp_celsius": "External Temp",
+        //"head_wind_speed_knots":"Head Wind (kts)",
+        "current_utc_date": "UTC Date",
+        "distance_to_destination_nautical_miles": "Distance to Dest. (nm)",
+        "altitude_feet": "Altitude (ft)",
+        //"destination_icao":"DEST",
+        //"departure_icao":"DEPT",
+        "flight_number": "Flight",
+
+        "tail_number": "Tail Number",
+        "flight_phase": "Flight Phase",
+        "departure_utc_offset_minutes": "DEP TZ",
+        "destination_utc_offset_minutes": "DET TZ",
+
+        "time_at_origin": "Origin Time",
+        "time_at_destination": "Dest. Time",
+        "distance_from_departure_nautical_miles": "Travelled (nm)",
+        "estimated_arrival_time_utc": "ETA UTC",
+
+        "wind_direction_degree": "Wind Dir.",
+
+        //"extv_channel_listing_version":"Channel Ver.",
+
+        "departure_coordinates":"Departure Pos.",
+        "destination_coordinates":"Destination Pos.",
+        "destination_iata": "DST IATA",
+        "departure_iata": "DEP IATA",
+        "flight_id": "Flight ID",
+        "flight_state": "Flight State"
+
+    }
+    htm = "";
+    cnt = 0;
+    positions = [];
+    ticks = 0;
+    htm += '<div class="row">';
+    $.each(types, function (key, dat) {
+        htm += '<div class="col-md-2 text-center"> \
+                <h3>' + dat + '</h3> \
+                <h1 id="' + key + '">' + "NULL" + '</h1> \
+                </div>'
+        cnt += 1
+        if (cnt % 6 == 0) htm += '</div><div class="row">';
+    })
+    htm += '</div>';
+    $("#db-con").html(htm);
+    setInterval(function () {
+        $.get("http://api.airpana.com/inflight/services/flightdata/v2/flightdata", function (data) {
+            $.each(data, function (key, dat) {
+                if (types[key]) {
+                    if (typeof(dat) == 'boolean') {
+                        dat = dat?"Yes":"No";
+                        console.log()
+                    }
+                    if (key == "takeoff_time_utc"){
+                        //dat=Date.toLocaleString(dat,"zh_CN");
+
+                    }
+                    if (key == "flight_speed_mach")
+                        dat = dat / 10000;
+                    if (key == "current_coordinates") {
+
+                        if(ticks % 600==0) {
+                            positions.push(dat);
+                            mapobj = $("#world-map > div").data("mapObject");
+                            var size_mkr = 0;
+                            for (i in mapobj.markers){
+                                if(i > size_mkr) size_mkr = Number.parseInt(i);
+                            }
+                            mapobj.addMarker(size_mkr+1,{
+                                latLng: [dat.latitude, dat.longitude],
+                                name: 'Past Track'
+                            });
+
+                            mapobj.markers[size_mkr+1].element.setStyle({
+                                fill: '#00ff5a',
+                                stroke: '#121'
+                            });
+                            console.log("New");
+                        }
+                        mapobj = $("#world-map > div").data("mapObject");
+                        mapobj.markers[0].config = {
+                            latLng: [dat.latitude, dat.longitude],
+                            name: 'Current Position'
+                        };
+                        mapobj.markers[0].element.setStyle({
+                            fill: '#ffa65a',
+                            stroke: '#111'
+                        });
+                        mapobj.markers[0].element.isHovered = true;
+
+                        //mapobj.markers[0].config = {latLng: [0, 0], name: 'Current Position'};
+                        mapobj.repositionMarkers();
+                    }
+                    if (key == "departure_coordinates") {
+                        mapobj = $("#world-map > div").data("mapObject");
+                        mapobj.markers[1].config = {latLng: [dat.latitude, dat.longitude], name: 'Departure Position'};
+                        //mapobj.markers[0].config = {latLng: [0, 0], name: 'Current Position'};
+                        mapobj.repositionMarkers();
+                    }
+                    if (key == "destination_coordinates") {
+                        mapobj = $("#world-map > div").data("mapObject");
+                        mapobj.markers[2].config = {latLng: [dat.latitude, dat.longitude], name: 'Destination Position'};
+                        //mapobj.markers[0].config = {latLng: [0, 0], name: 'Current Position'};
+                        mapobj.repositionMarkers();
+                    }
+                    if (dat.latitude) {
+                        dat = dat.latitude.toPrecision(6) + " " + dat.longitude.toPrecision(6);
+                    }
+
+                    if ($("#" + key).text() != dat) {
+                        $("#" + key).addClass("altered");
+                        $("#" + key).attr("data-unchanged", 0);
+                    } else {
+                        $("#" + key).attr("data-unchanged", Number.parseInt($("#" + key).attr("data-unchanged")) + 1);
+                        if (Number.parseInt($("#" + key).attr("data-unchanged")) > 3) $("#" + key).removeClass("altered");
+                    }
+                    $("#" + key).text(dat);
+                }
+            })
+
+            ticks = ticks + 1;
+        })
+    }, 100);
+
+    vecmap = $('#world-map').vectorMap({
+                map: 'world_mill_en',
+                backgroundColor: "transparent",
+                regionStyle: {
+                    initial: {
+                        fill: '#e4e4e4',
+                        "fill-opacity": 1,
+                        stroke: 'none',
+                        "stroke-width": 0,
+                        "stroke-opacity": 1
+                    }
+                },
+                markerStyle: {
+                    initial: {
+                        fill: '#00a65a',
+                        stroke: '#111'
+                    }
+                },
+                markers: [
+                    {latLng: [41.90, 12.45], name: 'Vatican City'},
+                    {latLng: [41.90, 12.45], name: 'Vatican City'},
+                    {latLng: [41.90, 12.45], name: 'Vatican City'},
+                ],
+//        onRegionLabelShow: function (e, el, code) {
+//            if (typeof visitorsData[code] != "undefined")
+//                el.html(el.html() + ': ' + visitorsData[code] + ' new visitors');
+//        }
+            }
+    );
 
 </script>
+<style>
+    h3 {
+        color: palegreen;
+    }
+
+    h1 {
+        color: #e74c3c;
+        transition: 0.5s;
+
+    }
+
+    .altered {
+        background-color: lightskyblue;
+    }
+</style>
 </body>
 </html>
